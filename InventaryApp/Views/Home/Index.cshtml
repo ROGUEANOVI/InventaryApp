@@ -1,8 +1,37 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="mt-5 container">
+    <div class="text-center">
+        <h1 class="display-4 mb-3">Bienvenido al Módulo de Inventario</h1>
+        <p class="lead mb-4">
+            Administra tus productos fácilmente: crea, edita, elimina, compra y vende artículos de manera rápida y eficiente.
+        </p>
+        <a class="btn btn-primary btn-lg" asp-controller="Products" asp-action="Index">
+            Ir a Productos
+            &nbsp
+            <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+    </div>
+
+    <div class="mt-5 row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    ¿Qué puedes hacer en este módulo?
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">✅ Registrar nuevos productos</li>
+                        <li class="list-group-item">✅ Editar información existente</li>
+                        <li class="list-group-item">✅ Eliminar productos del sistema</li>
+                        <li class="list-group-item">✅ Comprar / Vender productos (ajustar stock)</li>
+                        <li class="list-group-item">✅ Filtrar productos por nombre y categoría</li>
+                        <li class="list-group-item">✅ Visualizar stock y precios actualizados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
